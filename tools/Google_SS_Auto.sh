@@ -15,13 +15,13 @@ sudo pip install shadowsocks
 sudo touch /etc/shadowsocks.json
 sudo sh -c "cat>/etc/shadowsocks.json<<EOF
 {
-  "server":"0.0.0.0",
-  "server_port":12888,
-  "local_address":"127.0.0.1",
-  "local_port":1080,
-  "password":"123456",
-  "timeout":300,
-  "method":"aes-256-cfb"
+  "\"server"\":"\"0.0.0.0"\",
+  "\"server_port"\":"\"18888"\",
+  "\"local_address"\":"\"127.0.0.1"\",
+  "\"local_port"\":"\"1080"\",
+  "\"password"\":"\"123456"\",
+  "\"timeout"\":"\"300"\",
+  "\"method"\":"\"aes-256-cfb"\"
 }
 EOF"
 sudo /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start
