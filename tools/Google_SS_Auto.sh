@@ -28,6 +28,6 @@ sudo /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start
 echo "Add this line to /etc/rc.local for auto start:"
 echo "sudo /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start"
 
-echo "VPC网络-防火墙规则-创建防火墙规则(来源IP地址范围：0.0.0.0/0，协议端口：tcp:12888)"
+echo "VPC网络-防火墙规则-创建防火墙规则(来源IP地址范围：0.0.0.0/0，协议端口：tcp:18888)"
 echo "VPC网络-外部IP地址-设置静态IP"
 
