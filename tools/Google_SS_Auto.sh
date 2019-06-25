@@ -27,7 +27,7 @@ EOF"
 echo "######## Change "server_port" and "password" ：/etc/shadowsocks.json ########"
 sudo /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start
 echo "Configuration auto start SS ......"
-sudo sh -c "sed '/exit/i \sudo /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start' /etc/shadowsocks.json > /etc/rc.local.bak"
+sudo sh -c "sed '/exit/i \sudo /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start' /etc/rc.local > /etc/rc.local.bak"
 sudo mv /etc/rc.local.bak /etc/rc.local
 sudo chmod 755 /etc/rc.local
 echo "SS auto start configuration complete......"
