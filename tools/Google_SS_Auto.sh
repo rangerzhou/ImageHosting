@@ -9,9 +9,9 @@ sudo sysctl -p
 sudo lsmod | grep bbr
 echo "******************* Open BBR Done ********************"
 
-sudo apt -y install python-pip
-sudo pip install --upgrade pip
-sudo pip install shadowsocks
+sudo apt -y install python3-pip
+sudo pip3 install --upgrade pip
+sudo pip3 install shadowsocks
 sudo touch /etc/shadowsocks.json
 sudo sh -c "cat>/etc/shadowsocks.json<<EOF
 {
